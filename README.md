@@ -23,8 +23,8 @@ This tool automates the process of extracting text scripts from multiple Google 
 1. Open the file named `input_links.txt`.
 2. Paste your Google Doc links and their corresponding titles. You can copy-paste directly from Excel or Google Sheets. The format should be:
    ```text
-   https://docs.google.com/document/d/...    "Course Title 1"
-   https://docs.google.com/document/d/...    "Course Title 2"
+   https://docs.google.com/document/d/...    "Script Title 1"
+   https://docs.google.com/document/d/...    "Script Title 2"
    ```
 3. Run the script:
    ```bash

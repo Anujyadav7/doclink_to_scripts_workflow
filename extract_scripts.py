@@ -133,8 +133,15 @@ async def main():
                 raw_text = await extract_google_doc_text(page, doc_link)
                 cleaned_text = clean_extracted_text(raw_text)
                 
+                # Extract title from the first line of the document if no title was provided
+                actual_title = title
+                if actual_title.startswith("Document "):
+                    lines = cleaned_text.splitlines()
+                    if lines:
+                        actual_title = lines[0].strip()
+                
                 # Format output
-                final_output = f"TITLE: {title}\n"
+                final_output = f"TITLE: {actual_title}\n"
                 final_output += f"LINK: {doc_link}\n"
                 final_output += "-"*80 + "\n"
                 final_output += cleaned_text + "\n"

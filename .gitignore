@@ -1,0 +1,14 @@
+# Playwright Persistent Context Data
+playwright_data/
+
+# Output Files
+extracted_scripts.txt
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+.venv/

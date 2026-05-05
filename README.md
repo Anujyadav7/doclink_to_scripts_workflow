@@ -8,12 +8,19 @@ This tool automates the process of extracting text scripts from multiple Google 
 
 ## Setup Instructions
 
-1. Clone or download this repository.
-2. Install the required dependencies:
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/Anujyadav7/doclink_to_scripts_workflow.git
+   ```
+2. Navigate into the project folder:
+   ```bash
+   cd doclink_to_scripts_workflow
+   ```
+3. Install the required dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-3. Install Playwright browsers (required for the automation to work):
+4. Install Playwright browsers (required for the automation to work):
    ```bash
    playwright install
    ```
